@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tâm Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">Tâm</h1>
+    <ul class="nav-links">
+      <li><a href="#home">Trang chủ</a></li>
+      <li><a href="#about">Giới thiệu</a></li>
+      
+      <li class="dropdown">
+        <a href="#">Dự án ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#projects">Website</a></li>
+          <li><a href="#projects">Thiết kế</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#contact">Liên hệ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <img src="avatar.jpg" class="avatar">
+  <h2>Đặng Thành Tâm</h2>
+  <p>MSSV: PK04546 | Ngành Ứng dụng phần mềm</p>
+  <button onclick="scrollToSection('contact')">Liên hệ ngay</button>
+</section>
+
+<section id="about">
+  <h2>Giới thiệu</h2>
+  <p><b>Mã sinh viên:</b> PK04546</p>
+  <p><b>Ngành:</b> Ứng dụng phần mềm</p>
+  <p><b>Sở thích:</b> Lập trình, thiết kế, chơi game</p>
+</section>
+
+<section id="skills">
+  <h2>Kỹ năng</h2>
+  <div class="skill">HTML
+    <div class="bar"><span style="width:90%"></span></div>
+  </div>
+  <div class="skill">CSS
+    <div class="bar"><span style="width:85%"></span></div>
+  </div>
+  <div class="skill">JavaScript
+    <div class="bar"><span style="width:75%"></span></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Dự án</h2>
+  <div class="project">
+    <img src="info.png">
+    <p>Website cá nhân</p>
+  </div>
+  <div class="project">
+    <img src="hobby.png">
+    <p>Thiết kế UI</p>
+  </div>
+  <div class="project">
+    <img src="achievement.png">
+    <p>Portfolio cá nhân</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Liên hệ</h2>
+  <input type="text" placeholder="Họ tên">
+  <input type="email" placeholder="Email">
+  <textarea placeholder="Nội dung"></textarea>
+  <button onclick="sendMessage()">Gửi</button>
+</section>
+
+<footer>
+  <p>© 2026 Đặng Thành Tâm</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

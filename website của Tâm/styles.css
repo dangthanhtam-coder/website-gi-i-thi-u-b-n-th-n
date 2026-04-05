@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: white;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #222;
+  list-style: none;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Section */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Skills */
+.skill {
+  margin: 10px 0;
+}
+
+.bar {
+  background: #ddd;
+  height: 10px;
+}
+
+.bar span {
+  display: block;
+  height: 10px;
+  background: red;
+}
+
+/* Project */
+.project {
+  display: inline-block;
+  margin: 10px;
+}
+
+.project img {
+  width: 200px;
+}
+
+/* Form */
+input, textarea {
+  display: block;
+  margin: 10px auto;
+  width: 300px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  padding: 10px;
+}
